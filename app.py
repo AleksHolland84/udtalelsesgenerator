@@ -51,8 +51,9 @@ if __name__ == "__main__":
     if class_size > 0:
         st.markdown('---')
 
-        st.markdown('''Nedenfor kan du se et datafelt for det antal elever du har valgt. Udvyld felterne.  
-        Udtalelsen bliver genereret ud fra karakterene du vælger under Arbejdsprocessen, Fagligtindhold, Produktet og Fremlæggelsen.''')
+        st.markdown('''Nedenfor kan du se et datafelt for det antal elever du har valgt.
+        Udtalelsen bliver genereret ud fra karakterene du vælger under Arbejdsprocessen, Fagligtindhold, 
+        Produktet og Fremlæggelsen og genereres løbende imens du bruger appen''')
 
         st.subheader('Downloads:')
 
