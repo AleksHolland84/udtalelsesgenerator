@@ -24,6 +24,8 @@ st.set_page_config(page_title='Projekttalelser')
 if __name__ == "__main__":
 
     st.title('Projektudtalelser')
+    st.markdown('''Dette er en simpel udtalelsesgenerator, der generer elevudtalelser på baggrund af bedømmelsen på de 4 områder. 
+                    Træk i slidere for at genere "templates" til det antal elever der skal bedømmes. Udfyld derefter datafelterne med de ønskede input.''')
     class_size = st.slider('Hvor mange elever', 0, 40, 0)
 
     for i in range(class_size):
@@ -35,21 +37,19 @@ if __name__ == "__main__":
     with LA1:
         teacher1 = st.text_input(
             "Lærer 1",
-            "KK",
+            "Navn",
             key="teacher1",
         )
     with LA2:
         teacher2 = st.text_input(
             "Lærer 2",
-            "AH",
+            "Navn",
             key="teacher2",
         )
 
 
     if class_size > 0:
         st.markdown('---')
-
-        #df = pd.read_excel(uploaded_file, engine='openpyxl')
 
         st.markdown('''Nedenfor kan du se et datafelt for det antal elever du har valgt. Udvyld felterne.  
         Udtalelsen bliver genereret ud fra karakterene du vælger under Arbejdsprocessen, Fagligtindhold, Produktet og Fremlæggelsen.''')
@@ -92,8 +92,6 @@ if __name__ == "__main__":
             else:
                 environment = Environment(loader=FileSystemLoader("templates/single/"))
             content = ""
-            # genererer filnavn på baggrund af den studerendes navn
-
 
             content = template_info.render(
                 name = navn,
