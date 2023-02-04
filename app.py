@@ -4,7 +4,6 @@ import streamlit as st # pip install streamlit
 import pandas as pd # pip install pandas
 
 #To run the app, use a terminal: streamlit run .\app.py
-#Inspiration til denne app er fundet i videoen: https://www.youtube.com/watch?v=IolyDeV0wmo.
 #Jinja guide er fundet på https://realpython.com/primer-on-jinja-templating/
 whole_content = ""
 
@@ -52,7 +51,8 @@ if __name__ == "__main__":
 
         #df = pd.read_excel(uploaded_file, engine='openpyxl')
 
-        st.markdown('Nedenfor er et datasæt, som du kan bruge til at kontrollere dit uploaded data')
+        st.markdown('''Nedenfor kan du se et datafelt for det antal elever du har valgt. Udvyld felterne.  
+        Udtalelsen bliver genereret ud fra karakterene du vælger under Arbejdsprocessen, Fagligtindhold, Produktet og Fremlæggelsen.''')
 
         st.subheader('Downloads:')
 
@@ -123,11 +123,6 @@ if __name__ == "__main__":
                 lærer1 = teacher1,
                 lærer2 = teacher2,
             )
-
-
-
-            #df_student = pd.read_csv(StringIO(content))
-            #generate_student_link(content, name=navn)
 
             st.markdown(content)
             st.download_button(f'Download {navn}', content, file_name=f"projektudtalelse_{navn}_{date}.txt")
