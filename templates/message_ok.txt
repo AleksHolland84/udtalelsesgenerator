@@ -1,0 +1,4 @@
+
+Eleven har opfyldt følgende krav:
+    Deltaget i første vejledning: {{ consultation1 }}
+    Deltaget i anden vejledningsmøde: {{ consultation2 }}
