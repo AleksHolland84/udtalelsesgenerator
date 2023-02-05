@@ -25,8 +25,8 @@ if __name__ == "__main__":
 
     st.title('Projektudtalelser')
     st.markdown('''Dette er en simpel udtalelsesgenerator, der generer elevudtalelser på baggrund af bedømmelsen på de 4 områder. 
-                    Træk i slidere for at genere "templates" til det antal elever der skal bedømmes. Udfyld derefter datafelterne med de ønskede input.''')
-    class_size = st.slider('Hvor mange elever', 0, 40, 0)
+                    Træk i slideren for at genere "templates" til det antal elever der skal bedømmes. Udfyld derefter datafelterne med det ønskede input.''')
+    class_size = st.slider('Hvor mange elever', 0, 36, 0)
 
     for i in range(class_size):
         students[f"name_{i}"] = f"Elev {i+1}"
