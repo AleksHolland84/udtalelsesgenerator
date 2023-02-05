@@ -48,7 +48,7 @@ if __name__ == "__main__":
         )
 
     date = st.date_input ("Dato",
-                          today.strftime("%d.%m.%Y"))
+                          datetime.data(2023, 5, 2))
         
         
     if class_size > 0:
