@@ -47,8 +47,8 @@ if __name__ == "__main__":
             key="teacher2",
         )
 
-    date = st.date_input ("Dato", date(2, 5, 2023))
-    #date.strptime(date, "%Y/%m/%d").strftime("%d.%m.%Y")
+    date = st.date_input ("Dato", date(2023, 5, 2))
+    date = date.strftime("%d.%m.%Y")
         
         
     if class_size > 0:
