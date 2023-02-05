@@ -47,7 +47,7 @@ if __name__ == "__main__":
             key="teacher2",
         )
 
-    date = st.date_input ("Dato", datetime.date(2023, 5, 2))
+    date = st.date_input ("Dato", date(2023, 5, 2))
         
         
     if class_size > 0:
