@@ -9,7 +9,7 @@ whole_content = ""
 
 # Create date variables
 today = date.today()
-date = today.strftime("%d.%m.%Y")
+#date = today.strftime("%d.%m.%Y")
 
 # Use Jinja to generate common templates
 common_environment = Environment(loader=FileSystemLoader("templates/"))
@@ -47,7 +47,10 @@ if __name__ == "__main__":
             key="teacher2",
         )
 
-
+    date = st.date_input ("Dato",
+                          today.strftime("%d.%m.%Y"))
+        
+        
     if class_size > 0:
         st.markdown('---')
 
