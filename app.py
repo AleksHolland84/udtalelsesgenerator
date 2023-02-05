@@ -48,6 +48,7 @@ if __name__ == "__main__":
         )
 
     date = st.date_input ("Dato", date(2023, 5, 2))
+    date.strftime("%d.%m.%Y")
         
         
     if class_size > 0:
