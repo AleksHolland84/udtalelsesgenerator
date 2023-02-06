@@ -107,7 +107,7 @@ if __name__ == "__main__":
             if gruppe_checkbox == True:
                 template_gruppe = environment.get_template("gruppe.txt")
                 content = content + template_gruppe.render(
-                    elev = student.get("name"),
+                    elev = navn,
                 )+ "\n\n"
 
 
