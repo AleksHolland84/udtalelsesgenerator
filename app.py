@@ -72,7 +72,7 @@ if __name__ == "__main__":
 
             underemne = st.text_input('Underemne', 'The most awesome underemne ever!', key=f"{navn}_underemne")
             problemformulering = st.text_input('Problemformulering', 'Problem...', key=f"{navn}_problem")
-            gruppe_checkbox = st.checkbox(f'{navn} har arbejdet i gruppe')
+            gruppe_checkbox = st.checkbox(f'{_name} har arbejdet i gruppe')
 
             # Create columns with student's grade for the 4 areas
             col1, col2, col3, col4 = st.columns(4)
