@@ -70,8 +70,8 @@ if __name__ == "__main__":
             # Create input text for student name
             navn = st.text_input('Navn', f'{_name}')
 
-            underemne = st.text_input('Underemne', 'The most awesome underemne ever!', key=f"{navn}_underemne")
-            problemformulering = st.text_input('Problemformulering', 'Problem...', key=f"{navn}_problem")
+            underemne = st.text_input('Underemne', 'The most awesome underemne ever!', key=f"{_name}_underemne")
+            problemformulering = st.text_input('Problemformulering', 'Problem...', key=f"{_name}_problem")
             gruppe_checkbox = st.checkbox(f'{_name} har arbejdet i gruppe')
 
             # Create columns with student's grade for the 4 areas
@@ -133,7 +133,7 @@ if __name__ == "__main__":
             )
 
             st.markdown(content)
-            st.download_button(f'Download {_name}', content, file_name=f"projektudtalelse_{_name}_{download_date}.txt")
+            st.download_button(f'Download {navn}', content, file_name=f"projektudtalelse_{navn}_{download_date}.txt")
             st.markdown('-'*17)
             whole_content += content + "\r\n" + '-'*80 + "\n\n\n"
     st.download_button('Download alle udtalelser', whole_content)
