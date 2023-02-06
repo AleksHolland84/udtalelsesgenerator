@@ -133,7 +133,7 @@ if __name__ == "__main__":
             )
 
             st.markdown(content)
-            st.download_button(f'Download {navn}', content, file_name=f"projektudtalelse_{navn}_{download_date}.txt")
+            st.download_button(f'Download {_name}', content, file_name=f"projektudtalelse_{_name}_{download_date}.txt")
             st.markdown('-'*17)
             whole_content += content + "\r\n" + '-'*80 + "\n\n\n"
     st.download_button('Download alle udtalelser', whole_content)
