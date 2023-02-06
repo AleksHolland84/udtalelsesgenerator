@@ -104,6 +104,12 @@ if __name__ == "__main__":
                 problemformulering = problemformulering,
             ) + "\n\n"
 
+            if gruppe == True:
+                template_gruppe = environment.get_template("gruppe.txt")
+                content = content + template_gruppe.render(
+                    elev = student.get("name"),
+                )+ "\n\n"
+
 
             template_arbejdsprocessen = environment.get_template(f"arbejdsprocessen{arb_grade}.txt")
             content = content + template_arbejdsprocessen.render() + "\n\n"
