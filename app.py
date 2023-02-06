@@ -77,16 +77,16 @@ if __name__ == "__main__":
             # Create columns with student's grade for the 4 areas
             col1, col2, col3, col4 = st.columns(4)
             with col1:
-                arb_grade = st.selectbox("Arbejdsprocessen", ('-3','00','02','4', '7', '10', '12'), key=f"{navn}_arb")
+                arb_grade = st.selectbox("Arbejdsprocessen", ('-3','00','02','4', '7', '10', '12'), key=f"{_name}_arb")
             with col2:
-                fag_grade = st.selectbox("Fagligtindhold", ('-3','00','02','4', '7', '10', '12'), key=f"{navn}_fag")
+                fag_grade = st.selectbox("Fagligtindhold", ('-3','00','02','4', '7', '10', '12'), key=f"{_name}_fag")
             with col3:
-                pro_grade = st.selectbox("Produktet", ('-3','00','02','4', '7', '10', '12'), key=f"{navn}_pro")
+                pro_grade = st.selectbox("Produktet", ('-3','00','02','4', '7', '10', '12'), key=f"{_name}_pro")
             with col4:
-                frem_grade = st.selectbox("Fremlæggelsen", ('-3','00','02','4', '7', '10', '12'), key=f"{navn}_frem")
+                frem_grade = st.selectbox("Fremlæggelsen", ('-3','00','02','4', '7', '10', '12'), key=f"{_name}_frem")
 
             # Create selectbox for the student's grade
-            grade = st.selectbox("Samlet karakter", ('-3','00','02','4', '7', '10', '12'), key=f"{navn}_grade")
+            grade = st.selectbox("Samlet karakter", ('-3','00','02','4', '7', '10', '12'), key=f"{_name}_grade")
 
 
             # Brug Jinja til at generere skabeloner 
