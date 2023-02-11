@@ -68,7 +68,7 @@ if __name__ == "__main__":
         date = st.date_input ("Dato", date(2023, 5, 2))
         date = date.strftime("%d.%m.%Y")
     with location_stamp:
-        location = st.text("By")
+        location = st.text_input("By", key="_location")
         
     if class_size > 0:
         st.markdown('---')
