@@ -207,7 +207,7 @@ if __name__ == "__main__":
         mention(
             label="streamlit",
             icon="github",
-            url="https://github.com/streamlit/example-app-cv-model",
+            url="https://github.com/AleksHolland84",
         )
 
        
