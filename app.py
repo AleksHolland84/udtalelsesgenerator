@@ -35,7 +35,7 @@ set_session("session", "template_session")   # Get
 if __name__ == "__main__":
     # Setup config - to configure title of webpage
     st.set_page_config(page_title='Projekttalelser', page_icon="📝",)
-    header1, header2 st.columns(2)
+    header1, header2 = st.columns(2)
     with header1:
         st.title('Projektudtalelser')
     with header2:
