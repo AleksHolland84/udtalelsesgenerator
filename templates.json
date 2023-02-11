@@ -1,0 +1,97 @@
+{
+    "single_templates": {
+        "arbejdsprocessen": {
+            "-3": ["Din arbejdsproces fremstår som værende særdeles mangelfuld, og du har udvist en meget ringe grad af fordybelse i arbejdet.", "Du har i særdeleshed ikke udnyttet tiden og har ikke søgt vejledning i løbet af ugen. "],
+            "00": ["Din arbejdsproces fremstår som værende mangelfuld, hvor du bl.a. har udvist en ringe grad af fordybelse i arbejdet.", "Du har ikke udnyttet tiden og har ikke søgt vejledning i løbet af ugen."],
+            "02": ["Din arbejdsproces fremstår som værende tilstrækkelig, men kan dog virke overfladisk og viser ikke dybden i dit arbejde.", "Du har i mindre grad udvist fordybelse i arbejdet og har ikke udnyttet tiden til fulde.", "Det kunne have været nyttigt at have søgt vejledning."],
+            "4": ["Du har igennem din arbejdsproces udvist nogen grad af fordybelse i dit arbejde, som bærer en rimelig grad af selvstændighed og fornuftig brug af tiden.", "Du har i løbet af ugen søgt vejledning, når det brændte på."],
+            "7": ["Du har igennem din arbejdsproces udvist nogen grad af fordybelse i dit arbejde, som bærer en rimelig grad af selvstændighed og fornuftig brug af tiden.", "Du har i løbet af ugen til tider søgt vejledning."],
+            "10":["Du har igennem din arbejdsproces udvist en høj grad af fordybelse og selvdisciplin i dit arbejde.", "Arbejdsprocessen bærer præg af målrettet overblik og selvstændig vurdering af indsamlede informationer.", "Du har udnyttet tiden fuldt ud, og selvom du har arbejdet selvstændigt, har du også søgt vejledning, når der har været brug for det."],
+            "12":["Du har igennem din arbejdsproces udvist en stor grad af fordybelse og selvdisciplin i dit arbejde.", "Arbejdsprocessen bærer præg af målrettet overblik og selvstændig vurdering af indsamlede informationer.", "Du har søgt vejledning, når der har været behov for det og udnyttet tiden til fulde."]
+        },
+        "fagligtindhold": {
+            "-3": ["Det faglige niveau er særdeles mangelfuldt og indeholder ikke et overblik over det centrale stofområde.", "Der dokumenteres ikke for konklusionen, og opgaven/fremlæggelsen savner argumentation og stillingtagen.", "Der perspektiveres ikke til andet stof fra undervisningen."],
+            "00": ["Det faglige niveau er særdeles mangelfuldt og indeholder ikke et overblik over det centrale stofområde.", "Der dokumenteres ikke for konklusionen, og opgaven/fremlæggelsen savner argumentation og stillingtagen.", "Der perspektiveres ikke til andet stof fra undervisningen." ],
+            "02": ["Det faglige niveau er tilstrækkeligt, men mangler overblik over det centrale stofområde.", "Der dokumenteres tilstrækkeligt for konklusionen, men opgaven/fremlæggelsen savner argumentation og stillingtagen.", "Der perspektiveres ikke til andet stof fra undervisningen."],
+            "4": ["Det faglige niveau mangler brug af faglig viden, men indeholder væsentlige detaljer med et rimeligt omfang af dokumentation og argumentation.", "Det indeholder et mindre overblik over det centrale stofområde.", "Konklusionen på opgaven/fremlæggelsen savner argumentation og stillingtagen.", "Der perspektiveres til andet stof i undervisningen enkelte steder."],
+            "7": ["Det faglige niveau indeholder brug af faglig viden fra flere fag, både kundskaber, metoder og færdigheder.", "Der dokumenteres og argumenteres i et rimeligt omfang ,hvor der enkelte steder perspektiveres til andet stof i undervisningen."],
+            "10":["Fremlæggelse er klar, tydelig, veldisponeret og fremstår struktureret med en høj grad af forberedelse.", "Fremlæggelsen besidder en god kontakt til tilhørende med en kreativ brug af virkemidler og udtryksform.", "Budskabet er tydeligt og går klart igennem."],
+            "12":["Det faglige niveau indeholder en høj grad af faglig viden, hvor der henvises til dokumentation.", "Dertil inddrages der både kundskaber, metoder og færdigheder fra flere fag.", "Det faglige indhold præsenteres med klart overblik over de faglige arbejdsmetoder, hvor der argumenteres, stillingtages for valgte løsninger og perspektiveres med henblik på problemformuleringen."]
+        },
+        "produktet": {
+            "-3": ["Dit produkt er \"ikke eksisterende\" og kan derfor ikke betragtes som relevant for emnet."],
+            "00": ["Dit produkt bliver ikke inddraget i fremlæggelsen og belyser derfor ikke problemstillingen.", "Det må derfor betragtes som ikke værende relevant for emnet.", "Den håndværksmæssige udførsel er præget af en stor grad af ligegyldighed."],
+            "02": ["Dit produkt er nogenlunde relevant i forhold til emnet, men belyser ikke problemstillingen nok.", "Den håndværksmæssige udførelse er præget af nogen ligegyldighed."],
+            "4": ["Dit produkt er relevant i forhold til emnet og problemstillingen.", "Du udviser i nogen grad beherskelse af udtryksformens virkemidler."],
+            "7": ["Dit produkt er relevant i forhold til emnet og problemstillingen.", "Den håndværksmæssige udførelse er præget af nogen omhu, og samtidig udviser du beherskelse af udtryksformens virkemidler."],
+            "10":["Dit produkt er præget af faglighed, kreativitet og idérigdom med fint håndværksmæssig udførelse.", "Udtryksformen er tilpasset projektets budskab, hvor du samtidig har udvist en beherskelse af udtryksformens virkemidler."],
+            "12":["Dit produkt er præget af faglighed, kreativitet og idérigdom med dygtig og omhyggelig håndværksmæssig udførelse.", "Udtryksformen er tilpasset projektets budskab, hvor du samtidig får udvist en beherskelse af udtryksformens virkemidler."]
+        },
+        "fremlæggelsen": {
+            "-3": ["Fremlæggelsen havde intet nævneværdigt indhold."],
+            "00": ["Fremlæggelsen viser meget sparsom struktur og mangler fagligt indhold."],
+            "02": ["Fremlæggelsen mangler struktur og en ”rød tråd” med en meget sparsom brug af virkemidler.", "Du er meget fastlåst til noter."],
+            "4": ["Fremlæggelsen er nogenlunde klar og tydelig, dog er du noget fastholdt til noter.", "Fremlæggelsen fremstår struktureret med nogen grad af forberedelse.", "Fremlæggelsen besidder en kontakt til tilhørende og fremtræder rimelig helstøbt."],
+            "7": ["Fremlæggelsen er nogenlunde klar og tydelig, hvor du er mindre fastholdt til noter.", "Fremlæggelsen fremstår struktureret med en rimelig grad af forberedelse.", "Fremlæggelsen besidder en god kontakt til tilhørende og fremtræder rimelig helstøbt."],
+            "10":["Fremlæggelse er klar, tydelig, veldisponeret og fremstår struktureret med en høj grad af forberedelse.", "Fremlæggelsen besidder en god kontakt til tilhørende med en kreativ brug af virkemidler og udtryksform.", "Budskabet er tydeligt og går klart igennem."],
+            "12":["Fremlæggelse er klar, tydelig, veldisponeret og fremstår struktureret med en meget høj grad af forberedelse.", "Fremlæggelsen besidder en rigtig god kontakt til tilhørende med en kreativ brug af virkemidler og udtryksform.", "Budskabet fremgår klart og tydeligt og er velunderstøttet af relevante kilder."]
+        }
+    },
+    "group_templates": {
+        "arbejdsprocessen": {
+            "-3": ["Din arbejdsproces fremstår som værende særdeles mangelfuld, og du har udvist en meget ringe grad af fordybelse i arbejdet.", "Du har i særdeleshed ikke udnyttet tiden og har ikke søgt vejledning i løbet af ugen. "],
+            "00": ["Din arbejdsproces fremstår som værende mangelfuld, hvor du bl.a. har udvist en ringe grad af fordybelse i arbejdet.", "Du har ikke udnyttet tiden og har ikke søgt vejledning i løbet af ugen."],
+            "02": ["Din arbejdsproces fremstår som værende tilstrækkelig, men kan dog virke overfladisk og viser ikke dybden i dit arbejde.", "Du har i mindre grad udvist fordybelse i arbejdet og har ikke udnyttet tiden til fulde.", "Det kunne have været nyttigt at have søgt vejledning."],
+            "4": ["Du har igennem din arbejdsproces udvist nogen grad af fordybelse i dit arbejde, som bærer en rimelig grad af selvstændighed og fornuftig brug af tiden.", "Du har i løbet af ugen søgt vejledning, når det brændte på."],
+            "7": ["Du har igennem din arbejdsproces udvist nogen grad af fordybelse i dit arbejde, som bærer en rimelig grad af selvstændighed og fornuftig brug af tiden.", "Du har i løbet af ugen til tider søgt vejledning."],
+            "10":["Du har igennem din arbejdsproces udvist en høj grad af fordybelse og selvdisciplin i dit arbejde.", "Arbejdsprocessen bærer præg af målrettet overblik og selvstændig vurdering af indsamlede informationer.", "Du har udnyttet tiden fuldt ud, og selvom du har arbejdet selvstændigt, har du også søgt vejledning, når der har været brug for det."],
+            "12":["Du har igennem din arbejdsproces udvist en stor grad af fordybelse og selvdisciplin i dit arbejde.", "Arbejdsprocessen bærer præg af målrettet overblik og selvstændig vurdering af indsamlede informationer.", "Du har søgt vejledning, når der har været behov for det og udnyttet tiden til fulde."]
+        },
+        "fagligtindhold": {
+            "-3": ["Det faglige niveau er særdeles mangelfuldt og indeholder ikke et overblik over det centrale stofområde.", "Der dokumenteres ikke for konklusionen, og opgaven/fremlæggelsen savner argumentation og stillingtagen.", "Der perspektiveres ikke til andet stof fra undervisningen."],
+            "00": ["Det faglige niveau er særdeles mangelfuldt og indeholder ikke et overblik over det centrale stofområde.", "Der dokumenteres ikke for konklusionen, og opgaven/fremlæggelsen savner argumentation og stillingtagen.", "Der perspektiveres ikke til andet stof fra undervisningen." ],
+            "02": ["Det faglige niveau er tilstrækkeligt, men mangler overblik over det centrale stofområde.", "Der dokumenteres tilstrækkeligt for konklusionen, men opgaven/fremlæggelsen savner argumentation og stillingtagen.", "Der perspektiveres ikke til andet stof fra undervisningen."],
+            "4": ["Det faglige niveau mangler brug af faglig viden, men indeholder væsentlige detaljer med et rimeligt omfang af dokumentation og argumentation.", "Det indeholder et mindre overblik over det centrale stofområde.", "Konklusionen på opgaven/fremlæggelsen savner argumentation og stillingtagen.", "Der perspektiveres til andet stof i undervisningen enkelte steder."],
+            "7": ["Det faglige niveau indeholder brug af faglig viden fra flere fag, både kundskaber, metoder og færdigheder.", "Der dokumenteres og argumenteres i et rimeligt omfang ,hvor der enkelte steder perspektiveres til andet stof i undervisningen."],
+            "10":["Fremlæggelse er klar, tydelig, veldisponeret og fremstår struktureret med en høj grad af forberedelse.", "Fremlæggelsen besidder en god kontakt til tilhørende med en kreativ brug af virkemidler og udtryksform.", "Budskabet er tydeligt og går klart igennem."],
+            "12":["Det faglige niveau indeholder en høj grad af faglig viden, hvor der henvises til dokumentation.", "Dertil inddrages der både kundskaber, metoder og færdigheder fra flere fag.", "Det faglige indhold præsenteres med klart overblik over de faglige arbejdsmetoder, hvor der argumenteres, stillingtages for valgte løsninger og perspektiveres med henblik på problemformuleringen."]
+        },
+        "produktet": {
+            "-3": ["Dit produkt er \"ikke eksisterende\" og kan derfor ikke betragtes som relevant for emnet."],
+            "00": ["Dit produkt bliver ikke inddraget i fremlæggelsen og belyser derfor ikke problemstillingen.", "Det må derfor betragtes som ikke værende relevant for emnet.", "Den håndværksmæssige udførsel er præget af en stor grad af ligegyldighed."],
+            "02": ["Dit produkt er nogenlunde relevant i forhold til emnet, men belyser ikke problemstillingen nok.", "Den håndværksmæssige udførelse er præget af nogen ligegyldighed."],
+            "4": ["Dit produkt er relevant i forhold til emnet og problemstillingen.", "Du udviser i nogen grad beherskelse af udtryksformens virkemidler."],
+            "7": ["Dit produkt er relevant i forhold til emnet og problemstillingen.", "Den håndværksmæssige udførelse er præget af nogen omhu, og samtidig udviser du beherskelse af udtryksformens virkemidler."],
+            "10":["Dit produkt er præget af faglighed, kreativitet og idérigdom med fint håndværksmæssig udførelse.", "Udtryksformen er tilpasset projektets budskab, hvor du samtidig har udvist en beherskelse af udtryksformens virkemidler."],
+            "12":["Dit produkt er præget af faglighed, kreativitet og idérigdom med dygtig og omhyggelig håndværksmæssig udførelse.", "Udtryksformen er tilpasset projektets budskab, hvor du samtidig får udvist en beherskelse af udtryksformens virkemidler."]
+        },
+        "fremlæggelsen": {
+            "-3": ["Fremlæggelsen havde intet nævneværdigt indhold."],
+            "00": ["Fremlæggelsen viser meget sparsom struktur og mangler fagligt indhold."],
+            "02": ["Fremlæggelsen mangler struktur og en ”rød tråd” med en meget sparsom brug af virkemidler.", "Du er meget fastlåst til noter."],
+            "4": ["Fremlæggelsen er nogenlunde klar og tydelig, dog er du noget fastholdt til noter.", "Fremlæggelsen fremstår struktureret med nogen grad af forberedelse.", "Fremlæggelsen besidder en kontakt til tilhørende og fremtræder rimelig helstøbt."],
+            "7": ["Fremlæggelsen er nogenlunde klar og tydelig, hvor du er mindre fastholdt til noter.", "Fremlæggelsen fremstår struktureret med en rimelig grad af forberedelse.", "Fremlæggelsen besidder en god kontakt til tilhørende og fremtræder rimelig helstøbt."],
+            "10":["Fremlæggelse er klar, tydelig, veldisponeret og fremstår struktureret med en høj grad af forberedelse.", "Fremlæggelsen besidder en god kontakt til tilhørende med en kreativ brug af virkemidler og udtryksform.", "Budskabet er tydeligt og går klart igennem."],
+            "12":["Fremlæggelse er klar, tydelig, veldisponeret og fremstår struktureret med en meget høj grad af forberedelse.", "Fremlæggelsen besidder en rigtig god kontakt til tilhørende med en kreativ brug af virkemidler og udtryksform.", "Budskabet fremgår klart og tydeligt og er velunderstøttet af relevante kilder."]
+        }
+    },
+    "gruppe_checkbox": {
+        "true" : "har valgt at arbejde i en gruppe, som derfor også har indvirkning på elevens bedømmelse i forhold til arbejdsproces og fremlæggelse."
+    },
+    "session": {
+        "_teacher1": "Navn", 
+        "_teacher2": "Navn",
+        "_overemne": "Det moderne samfund"
+    },
+    "template_session": {
+        "_name": "Elevnavn",
+        "_underemne": "Elevens underemne",
+        "_problem": "Problemformulering...",
+        "_gruppe_checkbox": false,
+        "_arb_user_input" : "",
+        "_fag_user_input" : "",
+        "_pro_user_input" : "",
+        "_frem_user_input" : ""
+    }
+}
+

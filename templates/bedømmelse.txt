@@ -1,6 +1,0 @@
-
-KARAKTER: {{ grade }} 
-
-Lærere {{ lærer1 }}, {{ lærer2 }}
-
-Dato: Viborg d. {{ date }}
