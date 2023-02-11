@@ -198,7 +198,7 @@ if __name__ == "__main__":
             st.download_button(f'Download udtalelse', content, file_name=f"projektudtalelse_{navn}_{download_date}.txt", help=f"Downloader projektudtalelse for {navn}")
         
         with rest_button:
-            st.button("Ny elevuudtalelse", on_click=reset_template_session, type="primary",help="Fjerner alt input under 'Elevudtalelse'. Overemne, lærernavne og dato slettes ikke,")
+            st.button("Ny elevuudtalelse", on_click=reset_template_session, type="primary",help="Fjerner alt input under 'Elevudtalelse'. Overemne, lærernavne, dato og by slettes ikke,")
             
         st.markdown('-'*17)
             
