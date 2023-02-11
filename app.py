@@ -9,7 +9,7 @@ import json
 #Jinja guide er fundet på https://realpython.com/primer-on-jinja-templating/
 
 # Version number to show ppl on app
-version = "2.0.0"
+version = "2.0"
 
 
 
