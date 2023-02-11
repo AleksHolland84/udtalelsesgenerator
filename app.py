@@ -8,6 +8,8 @@ import json
 #To run the app, use a terminal: streamlit run .\app.py
 #Jinja guide er fundet på https://realpython.com/primer-on-jinja-templating/
 
+# Version number to show ppl on app
+version = "2.0.0"
 
 
 
@@ -35,6 +37,8 @@ if __name__ == "__main__":
     st.set_page_config(page_title='Projekttalelser', page_icon="📝",)
 
     st.title('Projektudtalelser')
+    st.caption(f"version {version}:")
+
     st.markdown('''Dette er en simpel udtalelsesgenerator, der generer elevudtalelser på baggrund af bedømmelsen på de 4 områder. 
                     Udfyld **_Overemne_**, **_Lærer 1_**, **_Lærer 2_** og ændre **_Dato_** hvis ønsket. Gå derefter videre til den enkelte elevudtalelse.
                     Udfold de 4 bedømmelsesområder; Arbejdsprocessen, Fagligtindhold, Produktet og Fremlæggelsen og :ballot_box_with_check:
