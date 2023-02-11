@@ -1,0 +1,1 @@
+{{ elev }} har valgt at arbejde i en gruppe, som derfor også har indvirkning på elevens bedømmelse i forhold til arbejdsproces og fremlæggelse.

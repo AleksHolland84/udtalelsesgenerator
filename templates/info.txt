@@ -1,0 +1,8 @@
+Navn: {{ name }}
+
+Overordnet emne: {{ overemne }}
+
+Selvvalgt delemne: {{ delemne }}
+
+Problemformulering: 
+{{ problemformulering }}
