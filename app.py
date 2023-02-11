@@ -207,14 +207,14 @@ if __name__ == "__main__":
     coffee, spacer1, spacer2, mail = st.columns(4)
     with coffee:
         #coffee_button(username="fake-username", floating=True, width=221)
-        pass
+        st.caption(f"Developer: A.Holland")
 
     with mail:
-        st.markdown('<a style="color:#9fa19f; text-decoration: none" href="mailto:hello@streamlit.io">Kontakt mig</a>', unsafe_allow_html=True)
+        #st.markdown('<a style="color:#9fa19f; text-decoration: none" href="mailto:hello@streamlit.io">Kontakt mig</a>', unsafe_allow_html=True)
         from streamlit_extras.mention import mention
         GOOGLE = "https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
         mention(
-            label="streamlit",
+            label="aleksholland84",
             icon="github",
             url="https://github.com/AleksHolland84",
         )
