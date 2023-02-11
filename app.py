@@ -63,8 +63,12 @@ if __name__ == "__main__":
             key="_teacher2",
         )
 
-    date = st.date_input ("Dato", date(2023, 5, 2))
-    date = date.strftime("%d.%m.%Y")
+    date_stamp, location_stamp = st.columns(2)
+    with date_stamp:
+        date = st.date_input ("Dato", date(2023, 5, 2))
+        date = date.strftime("%d.%m.%Y")
+    with location_stamp:
+        location = st.text("By")
         
     if class_size > 0:
         st.markdown('---')
@@ -181,6 +185,7 @@ if __name__ == "__main__":
             grade = karakter,
             lærer1 = teacher1,
             lærer2 = teacher2,
+            by = location,
         )
 
         # Display content to web app
