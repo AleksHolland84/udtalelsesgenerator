@@ -193,7 +193,7 @@ if __name__ == "__main__":
         content_container.subheader("Generet elevudtalelse:")
         content_container.markdown(content)
 
-        down_button, spacer, rest_button = st.columns(3)
+        down_button, rest_button = st.columns([11,4], gap="large")
         with down_button:
             st.download_button(f'Download udtalelse', content, file_name=f"projektudtalelse_{navn}_{download_date}.txt", help=f"Downloader projektudtalelse for {navn}")
         
@@ -204,7 +204,7 @@ if __name__ == "__main__":
             
 
 
-    coffee, spacer1, spacer2, mail = st.columns(4)
+    coffee, mail = st.columns([11,2 ])
     with coffee:
         #coffee_button(username="fake-username", floating=True, width=221)
         st.caption(f"Developer: A.Holland")
