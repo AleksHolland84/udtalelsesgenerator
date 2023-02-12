@@ -214,7 +214,7 @@ if __name__ == "__main__":
         from streamlit_extras.mention import mention
         GOOGLE = "https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
         mention(
-            label="aleksholland84",
+            label="A.Holland",
             icon="github",
             url="https://github.com/AleksHolland84",
         )
