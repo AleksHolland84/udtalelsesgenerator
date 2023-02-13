@@ -39,8 +39,8 @@
     },
     "group_templates": {
         "arbejdsprocessen": {
-            "-3": ["Din arbejdsproces fremstår som værende særdeles mangelfuld, og du har udvist en meget ringe grad af fordybelse i arbejdet.", "Du har i særdeleshed ikke udnyttet tiden og har ikke søgt vejledning i løbet af ugen. "],
-            "00": ["Din arbejdsproces fremstår som værende mangelfuld, hvor du bl.a. har udvist en ringe grad af fordybelse i arbejdet.", "Du har ikke udnyttet tiden og har ikke søgt vejledning i løbet af ugen."],
+            "-3": ["Din arbejdsproces fremstår som værende særdeles mangelfuld, og du har udvist en meget ringe grad af fordybelse i arbejdet.", "Du har i særdeleshed ikke udnyttet tiden og har ikke søgt vejledning i løbet af ugen.", "Du har ikke leveret noget arbejde eller har slet ikke deltaget i projektet."],
+            "00": ["Din arbejdsproces fremstår som værende mangelfuld, hvor du bl.a. har udvist en ringe grad af fordybelse i arbejdet.", "Du har ikke udnyttet tiden og har ikke søgt vejledning i løbet af ugen.", "Du har udvist minimalt engagement og har ikke formået at følge den aftalte arbejdsplan."],
             "02": ["Din arbejdsproces fremstår som værende tilstrækkelig, men kan dog virke overfladisk og viser ikke dybden i dit arbejde.", "Du har i mindre grad udvist fordybelse i arbejdet og har ikke udnyttet tiden til fulde.", "Det kunne have været nyttigt at have søgt vejledning."],
             "4": ["Du har igennem din arbejdsproces udvist nogen grad af fordybelse i dit arbejde, som bærer en rimelig grad af selvstændighed og fornuftig brug af tiden.", "Du har i løbet af ugen søgt vejledning, når det brændte på.", "Gruppen har vist en rimelig god grad af samarbejde og har formået at arbejde sammen omkring projektet."],
             "7": ["Du har igennem din arbejdsproces udvist fornuftig grad af fordybelse i dit arbejde, som bærer en rimelig grad af selvstændighed og fornuftig brug af tiden.", "Du har i løbet af ugen til tider søgt vejledning.", " Gruppen har vist en god grad af samarbejde og har været i stand til at arbejde effektivt sammen om opgaven og har været præget af god kommunikation."],
@@ -91,7 +91,8 @@
         "_arb_user_input" : "",
         "_fag_user_input" : "",
         "_pro_user_input" : "",
-        "_frem_user_input" : ""
+        "_frem_user_input" : "",
+        "_grade" : "---"
     }
 }
 

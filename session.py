@@ -34,11 +34,7 @@ def reset_template_session():
     for key, value in session_items.items():
         if key in st.session_state:
             st.session_state[key] = value
-            # This part below could be remoed...
-            if isinstance(st.session_state[key], str): 
-                st.session_state[key] = ""
-            elif isinstance(st.session_state[key], bool):
-                st.session_state[key] = False
+
 
     # Reset checked checkboxes for 
     uncheck_checkboxes("single_templates", "group_templates")
