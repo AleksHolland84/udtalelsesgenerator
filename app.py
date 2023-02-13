@@ -154,7 +154,7 @@ if __name__ == "__main__":
         template_produkt = Environment(loader=BaseLoader()).from_string("PRODUKT: " + produkt_text)
         content = content + template_produkt.render() + "\n\n"
 
-        fremlæggelsen_text = " ".join(fremlæggelse)
+        fremlæggelsen_text = " ".join(fremlæggelsen)
         template_fremlæggelse = Environment(loader=BaseLoader()).from_string("FREMLÆGGELSE: " + fremlæggelsen_text)
         content = content + template_fremlæggelse.render() + "\n\n"
 
