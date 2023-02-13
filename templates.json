@@ -86,7 +86,7 @@
     "template_session": {
         "_name": "Elevnavn",
         "_underemne": "Elevens underemne",
-        "_problem": "Problemformulering...",
+        "_problem": "",
         "_gruppe_checkbox": false,
         "_arb_user_input" : "",
         "_fag_user_input" : "",
