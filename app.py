@@ -2,6 +2,7 @@ from jinja2 import Environment, FileSystemLoader, BaseLoader
 from datetime import date
 import streamlit as st # pip install streamlit
 from streamlit_extras.buy_me_a_coffee import button as coffee_button # import streamlit extras
+from streamlit_extras.no_default_selectbox import selectbox # import no default selectbox 
 import pandas as pd # pip install pandas
 import json
 
@@ -30,6 +31,18 @@ template_info = common_environment.get_template("info.txt") # Elev, Overemne, Un
 from session import *
 set_session("session", "template_session")   # Get
 
+def template_returner(grades: tuple = ('-3','00','02','4', '7', '10', '12'), template: str = "", template_selecter: str = "", key="") -> list:
+    return_list = []
+    for _grade in grades:
+        st.caption(f"Anbefalet til karakteren {_grade}:")
+        for line in template_selecter[template][_grade]:
+            add_frem_line = st.checkbox(line, key=f"_{key}_{_grade}_{line}")
+            if add_frem_line:
+                return_list.append(line)
+    user_input = st.text_area(f'Tilføj dine egne linjer her', key=f"_{key}_user_input")
+    if user_input:
+        return_list.append(user_input.capitalize())
+    return return_list
 
 
 if __name__ == "__main__":
@@ -94,58 +107,23 @@ if __name__ == "__main__":
         else:
             template_selecter = template_data["single_templates"]
             
-        # Expander for the four areas of evaluation 
-        # # I made a function for this in the expander_creater.py script       
         with st.expander("Arbejdssprocessen"):
-            arbejdsprocessen = []
-            for _grade in grades:
-                st.caption(f"Anbefalet til karakteren {_grade}:")
-                for line in template_selecter["arbejdsprocessen"][_grade]:
-                    add_arb_line = st.checkbox(line, key=f"_arb_{_grade}_{line}")
-                    if add_arb_line:
-                        arbejdsprocessen.append(line)
-            user_input = st.text_area(f'Tilføj dine egne linjer her', key="_arb_user_input")
-            if user_input:
-                arbejdsprocessen.append(user_input.capitalize())
+            arbejdsprocessen = template_returner(template="arbejdsprocessen", template_selecter=template_selecter, key="_arb")
+
 
         with st.expander("Fagligtindhold"):
-            fagligtindhold = []
-            for _grade in grades:
-                st.caption(f"Anbefalet til karakteren {_grade}:")
-                for line in template_selecter["fagligtindhold"][_grade]:
-                    add_fag_line = st.checkbox(line, key=f"_fag_{_grade}_{line}")
-                    if add_fag_line:
-                        fagligtindhold.append(line)
-            user_input = st.text_area(f'Tilføj dine egne linjer her', key="_fag_user_input")
-            if user_input:
-                fagligtindhold.append(user_input.capitalize())
+            fagligtindhold = template_returner(template="fagligtindhold", template_selecter=template_selecter, key="_fag")
+
 
         with st.expander("Produktet"):
-            produkt = []
-            for _grade in grades:
-                st.caption(f"Anbefalet til karakteren {_grade}:")
-                for line in template_selecter["produktet"][_grade]:
-                    add_pro_line = st.checkbox(line, key=f"_pro_{_grade}_{line}")
-                    if add_pro_line:
-                        produkt.append(line)
-            user_input = st.text_area(f'Tilføj dine egne linjer her', key="_pro_user_input")
-            if user_input:
-                produkt.append(user_input.capitalize())
+            produkt = template_returner(template="produktet", template_selecter=template_selecter, key="_pro")
 
         with st.expander("Fremlæggelsen"):
-            fremlæggelse = []
-            for _grade in grades:
-                st.caption(f"Anbefalet til karakteren {_grade}:")
-                for line in template_selecter["fremlæggelsen"][_grade]:
-                    add_frem_line = st.checkbox(line, key=f"_frem_{_grade}_{line}")
-                    if add_frem_line:
-                        fremlæggelse.append(line)
-            user_input = st.text_area(f'Tilføj dine egne linjer her', key="_frem_user_input")
-            if user_input:
-                fremlæggelse.append(user_input.capitalize())
+            fremlæggelsen = template_returner(template="fremlæggelsen", template_selecter=template_selecter, key="_frem")
+
 
         # Create selectbox for the student's grade
-        karakter = st.selectbox("Samlet karakter", ('-3','00','02','4', '7', '10', '12'), key=f"_grade")
+        karakter = selectbox("Samlet karakter", ('-3','00','02','4', '7', '10', '12'), key=f"_grade")
 
                         
         # Content creation
