@@ -107,7 +107,7 @@ if __name__ == "__main__":
         else:
             template_selecter = template_data["single_templates"]
             
-        # Expander for the four areas of evaluation 
+        # Expander for the four areas of evaluation using the template_returner function
         with st.expander("Arbejdssprocessen"):
             arbejdsprocessen = template_returner(template="arbejdsprocessen", template_selecter=template_selecter, key="_arb")
 
@@ -122,12 +122,11 @@ if __name__ == "__main__":
         with st.expander("Fremlæggelsen"):
             fremlæggelsen = template_returner(template="fremlæggelsen", template_selecter=template_selecter, key="_frem")
 
-
         # Create selectbox for the student's grade
         karakter = selectbox("Samlet karakter", ('-3','00','02','4', '7', '10', '12'), key=f"_grade")
 
                         
-        # Content creation
+        # Content creation. Creates the content with Jinja2 
         content = ""
         content = template_info.render(
             name = navn,
