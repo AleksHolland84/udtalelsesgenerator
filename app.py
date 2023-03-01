@@ -176,6 +176,7 @@ if __name__ == "__main__":
             st.download_button(f'Download udtalelse', content, file_name=f"projektudtalelse_{navn}_{download_date}.txt", help=f"Downloader projektudtalelse for {navn}")
         
         with rest_button:
+            # ON CLCIK THE FUINCTION "reset_template_session" from the session.py scritp, will be called. 
             st.button("Ny elevuudtalelse", on_click=reset_template_session, type="primary",help="Fjerner alt input under 'Elevudtalelse'. Overemne, lærernavne, dato og by slettes ikke,")
             
         st.markdown('-'*17)
@@ -195,5 +196,9 @@ if __name__ == "__main__":
             icon="github",
             url="https://github.com/AleksHolland84",
         )
+
+
+    # STOP THE WEB APP TO RERUN! Hopfully this will make it not rerun unintentally
+    st.stop()
 
        
