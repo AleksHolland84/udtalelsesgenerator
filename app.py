@@ -42,7 +42,7 @@ def template_returner(grades: tuple = ('-3','00','02','4', '7', '10', '12'), tem
                 return_list.append(line)
     user_input = st.text_area(f'Tilføj dine egne linjer her', key=f"{key}_user_input")
     if user_input:
-        return_list.append(user_input.capitalize())
+        return_list.append(user_input)
     return return_list
 
 if __name__ == "__main__":
