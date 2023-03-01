@@ -78,7 +78,7 @@ if __name__ == "__main__":
 
     date_stamp, location_stamp = st.columns(2)
     with date_stamp:
-        date = st.date_input ("Dato", date(2023, 5, 2))
+        date = st.date_input ("Dato", date.today())
         date = date.strftime("%d.%m.%Y")
     with location_stamp:
         location = st.text_input("By", key="_location").capitalize()
