@@ -108,11 +108,11 @@ if __name__ == "__main__":
             template_selecter = template_data["single_templates"]
             
         # Expander for the four areas of evaluation using the template_returner function
-        with st.expander("Arbejdssprocessen"):
+        with st.expander("Arbejdsprocessen"):
             arbejdsprocessen = template_returner(template="arbejdsprocessen", template_selecter=template_selecter, key="_arb")
 
 
-        with st.expander("Fagligtindhold"):
+        with st.expander("Fagligt indhold"):
             fagligtindhold = template_returner(template="fagligtindhold", template_selecter=template_selecter, key="_fag")
 
 
