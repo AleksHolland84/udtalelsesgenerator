@@ -1,6 +1,6 @@
 
 KARAKTER: {{ grade }} 
 
-Lærere {{ lærer1 }}, {{ lærer2 }}
+Lærere: {{ lærer1 }}, {{ lærer2 }}
 
 Dato: {{ by }} d. {{ date }}
