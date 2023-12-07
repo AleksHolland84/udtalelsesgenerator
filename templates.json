@@ -81,7 +81,7 @@
     "session": {
         "_teacher1": "Navn", 
         "_teacher2": "Navn",
-        "_overemne": "Det moderne samfund"
+        "_overemne": "Konflikter" #"Det moderne samfund" "Ondskab" "Konflikter"
     },
     "template_session": {
         "_name": "Elevnavn",
