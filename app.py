@@ -1,7 +1,7 @@
 from jinja2 import Environment, FileSystemLoader, BaseLoader
 from datetime import date
 import streamlit as st # pip install streamlit
-from streamlit_extras.buy_me_a_coffee import button as coffee_button # import streamlit extras
+#from streamlit_extras.buy_me_a_coffee import button as coffee_button # import streamlit extras
 from streamlit_extras.no_default_selectbox import selectbox # import no default selectbox 
 import pandas as pd # pip install pandas
 import json
